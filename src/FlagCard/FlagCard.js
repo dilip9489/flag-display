@@ -15,7 +15,7 @@ const FlagCard = () => {
         console.log(data);
         setFlags(data);
       } catch (e) {
-        console.log(e);
+        console.error("Error fetching data: " + e);
       }
     };
     flagData();
